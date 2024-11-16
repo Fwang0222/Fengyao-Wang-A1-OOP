@@ -26,3 +26,32 @@ public class AssignmentOne {
         doctor.printBasicInf();
     }
 }
+class GeneralPractitioner extends HealthProfessional {
+    String specialty;
+
+    public GeneralPractitioner(int id, String name, String basicInf, String specialty) {
+        super(id, name, basicInf);
+        this.specialty = specialty;
+    }
+
+    @Override
+    public void printBasicInf() {
+        super.printBasicInf();
+        System.out.println("Specialty: " + specialty);
+    }
+}
+
+class Specialist extends HealthProfessional {
+    String expertiseArea;
+
+    public Specialist(int id, String name, String basicInf, String expertiseArea) {
+        super(id, name, basicInf);
+        this.expertiseArea = expertiseArea;
+    }
+
+    @Override
+    public void printBasicInf() {
+        super.printBasicInf();
+        System.out.println("Expertise Area: " + expertiseArea);
+    }
+}
