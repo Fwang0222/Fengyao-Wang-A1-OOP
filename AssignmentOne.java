@@ -55,3 +55,24 @@ class Specialist extends HealthProfessional {
         System.out.println("Expertise Area: " + expertiseArea);
     }
 }
+class Appointment {
+    String patientName;
+    String patientPhone;
+    String preferredTimeSlot;
+    HealthProfessional doctor;
+
+    public Appointment(String patientName, String patientPhone, String preferredTimeSlot, HealthProfessional doctor) {
+        this.patientName = patientName;
+        this.patientPhone = patientPhone;
+        this.preferredTimeSlot = preferredTimeSlot;
+        this.doctor = doctor;
+    }
+
+    public void printAppointmentDetails() {
+        System.out.println("Patient Name: " + patientName);
+        System.out.println("Patient Phone: " + patientPhone);
+        System.out.println("Preferred Time Slot: " + preferredTimeSlot);
+        System.out.println("Doctor Details:");
+        doctor.printBasicInf();
+    }
+}
