@@ -6,11 +6,11 @@ public class AssignmentOne {
         //Part 3 - Using classes and objects
 
         //Three general practitioners and two specialist subjects were created
-        GeneralPractitioner doctor1 = new GeneralPractitioner(1, "Jade", "Female", 12, "8:00 - 12:00", "General Practitioner");
-        GeneralPractitioner doctor2 = new GeneralPractitioner(2, "Hanson", "Male", 18, "10:00 - 14:00", "General Practitioner");
-        GeneralPractitioner doctor3 = new GeneralPractitioner(3, "Harden", "Male", 7, "14:00 - 18:00", "General Practitioner");
-        Specialist doctor4 = new Specialist(4, "Lively", "Male", 22,"7:00 - 11:00", "Specialist");
-        Specialist doctor5 = new Specialist(5, "Aria", "Female", 8, "15:00 - 19:00", "Specialist");
+        GeneralPractitioner doctor1 = new GeneralPractitioner(1, "Jade", "Female", 12, "8:00 - 12:00", "Children's health and Family health", "PhD", "General Practitioner");
+        GeneralPractitioner doctor2 = new GeneralPractitioner(2, "Hanson", "Male", 18, "10:00 - 14:00", "Nutritional Medicine", "MD", "General Practitioner");
+        GeneralPractitioner doctor3 = new GeneralPractitioner(3, "Harden", "Male", 7, "14:00 - 18:00", "Chronic disease management", "PhD", "General Practitioner");
+        Specialist doctor4 = new Specialist(4, "Lively", "Male", 22,"7:00 - 11:00", "Skin cancer", "MD", "Specialist");
+        Specialist doctor5 = new Specialist(5, "Aria", "Female", 8, "15:00 - 19:00", "Men's health and Women's health", "PhD", "Specialist");
 
         //Print basic information of all objects
         doctor1.printBasicInformation();

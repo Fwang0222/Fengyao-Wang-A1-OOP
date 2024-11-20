@@ -3,8 +3,8 @@ class GeneralPractitioner extends HealthProfessional {
     String doctorType;
 
     //Inherits the instance variable of the parent class and initializes the new instance variable
-    public GeneralPractitioner(int id, String name, String gender, int yearsOfExperience, String workingTime, String doctorType) {
-        super(id, name, gender, yearsOfExperience, workingTime);
+    public GeneralPractitioner(int id, String name, String gender, int yearsOfExperience, String workingTime, String areasOfInterest, String qualification, String doctorType) {
+        super(id, name, gender, yearsOfExperience, workingTime, areasOfInterest, qualification);
         this.doctorType = doctorType;
     }
 
